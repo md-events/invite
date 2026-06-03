@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="kk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Асқа шақыру — Хамзеұлы Қалқаман</title>
+    <meta name="description" content="Хамзеұлы Қалқаманның еске алу асына шақыру">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        gold: {
+                            300: '#f6e5a3',
+                            400: '#f0d67b',
+                            500: '#d4a843',
+                            600: '#b8922e',
+                        },
+                        deep: {
+                            green: '#064e3b',
+                            darker: '#043327',
+                            darkest: '#021f18',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.92);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes shimmer {
+
+            0%,
+            100% {
+                opacity: 0.7;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes lanternGlow {
+
+            0%,
+            100% {
+                filter: drop-shadow(0 0 4px rgba(246, 229, 163, 0.4));
+            }
+
+            50% {
+                filter: drop-shadow(0 0 10px rgba(246, 229, 163, 0.7));
+            }
+        }
+
+        .anim-up {
+            animation: fadeInUp 0.7s ease-out both;
+        }
+
+        .anim-fade {
+            animation: fadeIn 0.8s ease-out both;
+        }
+
+        .anim-scale {
+            animation: scaleIn 0.7s ease-out both;
+        }
+
+        .shimmer {
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        .lantern-glow {
+            animation: lanternGlow 3s ease-in-out infinite;
+        }
+
+        .d1 {
+            animation-delay: 0.1s;
+        }
+
+        .d2 {
+            animation-delay: 0.2s;
+        }
+
+        .d3 {
+            animation-delay: 0.35s;
+        }
+
+        .d4 {
+            animation-delay: 0.5s;
+        }
+
+        .d5 {
+            animation-delay: 0.65s;
+        }
+
+        .d6 {
+            animation-delay: 0.8s;
+        }
+
+        .d7 {
+            animation-delay: 0.95s;
+        }
+
+        /* Gold photo frame */
+        .photo-gold-frame {
+            box-shadow:
+                0 0 0 3px rgba(212, 168, 67, 0.6),
+                0 0 0 6px rgba(212, 168, 67, 0.2),
+                0 0 24px rgba(212, 168, 67, 0.15),
+                0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Background subtle pattern */
+        .bg-pattern {
+            background-image:
+                radial-gradient(circle at 50% 50%, rgba(212, 168, 67, 0.03) 0%, transparent 70%);
+        }
+    </style>
+</head>
+
+<body class="flex justify-center min-h-screen antialiased font-sans" style="background-color: #043327;">
+
+    <!-- Основной контейнер -->
+    <main class="w-full max-w-[600px] min-h-screen flex flex-col items-center relative overflow-hidden"
+        style="background: linear-gradient(180deg, #064e3b 0%, #043327 40%, #032b20 100%);">
+
+        <!-- ═══ Верхний золотой бордюр ═══ -->
+        <div class="w-full anim-fade d1">
+            <div class="w-full h-[2px] shimmer"
+                style="background: linear-gradient(90deg, transparent, #d4a843, transparent);"></div>
+            <div class="w-full flex justify-center py-2">
+                <svg width="320" height="20" viewBox="0 0 320 20" fill="none" class="shimmer"
+                    style="animation-delay: 0.5s;">
+                    <g stroke="#d4a843" stroke-width="0.8" fill="none" opacity="0.6">
+                        <path d="M0,10 L10,0 L20,10 L10,20 Z" />
+                        <path d="M20,10 L30,0 L40,10 L30,20 Z" />
+                        <path d="M40,10 L50,0 L60,10 L50,20 Z" />
+                        <path d="M60,10 L70,0 L80,10 L70,20 Z" />
+                        <path d="M80,10 L90,0 L100,10 L90,20 Z" />
+                        <path d="M100,10 L110,0 L120,10 L110,20 Z" />
+                        <path d="M120,10 L130,0 L140,10 L130,20 Z" />
+                        <path d="M140,10 L150,0 L160,10 L150,20 Z" />
+                        <path d="M160,10 L170,0 L180,10 L170,20 Z" />
+                        <path d="M180,10 L190,0 L200,10 L190,20 Z" />
+                        <path d="M200,10 L210,0 L220,10 L210,20 Z" />
+                        <path d="M220,10 L230,0 L240,10 L230,20 Z" />
+                        <path d="M240,10 L250,0 L260,10 L250,20 Z" />
+                        <path d="M260,10 L270,0 L280,10 L270,20 Z" />
+                        <path d="M280,10 L290,0 L300,10 L290,20 Z" />
+                        <path d="M300,10 L310,0 L320,10 L310,20 Z" />
+                    </g>
+                </svg>
+            </div>
+            <div class="w-full h-[1px]"
+                style="background: linear-gradient(90deg, transparent, rgba(212,168,67,0.3), transparent);"></div>
+        </div>
+
+        <div class="flex flex-col items-center w-full px-7 pt-6 pb-8 bg-pattern relative z-10">
+
+            <!-- ═══ Декоративные фонари (по бокам) ═══ -->
+            <div class="absolute top-6 left-4 anim-fade d2 lantern-glow">
+                <svg width="24" height="52" viewBox="0 0 24 52" fill="none">
+                    <line x1="12" y1="0" x2="12" y2="12" stroke="#d4a843" stroke-width="0.8" opacity="0.5" />
+                    <path d="M6,12 Q6,8 12,8 Q18,8 18,12 L18,28 Q18,34 12,36 Q6,34 6,28 Z" fill="none" stroke="#d4a843"
+                        stroke-width="0.8" opacity="0.5" />
+                    <circle cx="12" cy="20" r="2" fill="#d4a843" opacity="0.3" />
+                    <path d="M9,36 L15,36 L13,40 L11,40 Z" fill="none" stroke="#d4a843" stroke-width="0.6"
+                        opacity="0.4" />
+                </svg>
+            </div>
+            <div class="absolute top-6 right-4 anim-fade d2 lantern-glow" style="animation-delay: 1.5s;">
+                <svg width="24" height="52" viewBox="0 0 24 52" fill="none">
+                    <line x1="12" y1="0" x2="12" y2="12" stroke="#d4a843" stroke-width="0.8" opacity="0.5" />
+                    <path d="M6,12 Q6,8 12,8 Q18,8 18,12 L18,28 Q18,34 12,36 Q6,34 6,28 Z" fill="none" stroke="#d4a843"
+                        stroke-width="0.8" opacity="0.5" />
+                    <circle cx="12" cy="20" r="2" fill="#d4a843" opacity="0.3" />
+                    <path d="M9,36 L15,36 L13,40 L11,40 Z" fill="none" stroke="#d4a843" stroke-width="0.6"
+                        opacity="0.4" />
+                </svg>
+            </div>
+
+            <!-- Полумесяц со звездой -->
+            <div class="anim-fade d1 mb-5 mt-4">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path d="M18,14 A7,7 0 1,1 10,5 A5.5,5.5 0 1,0 18,14 Z" fill="#d4a843" opacity="0.5" />
+                    <polygon points="22,6 22.8,8.5 25.5,8.5 23.3,10 24,12.5 22,11 20,12.5 20.7,10 18.5,8.5 21.2,8.5"
+                        fill="#d4a843" opacity="0.5" />
+                </svg>
+            </div>
+
+            <!-- ═══ 1. Фотография ═══ -->
+            <div class="anim-scale d2 mb-7">
+                <img src="./assets/face.png" alt="Хамзеұлы Қалқаман"
+                    class="w-40 h-40 md:w-44 md:h-44 object-cover rounded-2xl photo-gold-frame">
+            </div>
+
+            <!-- Золотой разделитель -->
+            <div class="anim-fade d2 flex items-center gap-3 mb-5">
+                <div class="w-10 h-[1px]" style="background: linear-gradient(90deg, transparent, #d4a843);"></div>
+                <div class="w-2 h-2 rotate-45 border border-gold-500/50"></div>
+                <div class="w-10 h-[1px]" style="background: linear-gradient(270deg, transparent, #d4a843);"></div>
+            </div>
+
+            <!-- ═══ 2. Заголовок ═══ -->
+            <h1
+                class="anim-up d3 font-serif text-3xl md:text-4xl text-gold-300 mb-3 text-center tracking-wider font-semibold">
+                Асқа шақыру
+            </h1>
+
+            <!-- ═══ 3. Имя ═══ -->
+            <h2 class="anim-up d3 font-serif text-2xl md:text-[28px] text-white mb-2 text-center italic font-medium">
+                Хамзеұлы Қалқаман
+            </h2>
+
+            <!-- Тонкий разделитель -->
+            <div class="anim-fade d3 my-5">
+                <div class="flex items-center gap-2">
+                    <div class="w-5 h-[1px] bg-gold-500/25"></div>
+                    <div class="w-1 h-1 rounded-full bg-gold-500/35"></div>
+                    <div class="w-1.5 h-1.5 rounded-full bg-gold-500/45"></div>
+                    <div class="w-1 h-1 rounded-full bg-gold-500/35"></div>
+                    <div class="w-5 h-[1px] bg-gold-500/25"></div>
+                </div>
+            </div>
+
+            <!-- ═══ 4. Текст приглашения ═══ -->
+            <p
+                class="anim-up d4 text-center text-emerald-100/80 leading-7 mb-8 text-[15px] md:text-base max-w-md font-light">
+                Құрметті әкеміздің көзін көрген барша жамағат! Сіздерді әкеміз
+                Хамзеұлы Қалқаманның еске алу асына шақырамыз.
+            </p>
+
+            <!-- ═══ 5. Информационный блок ═══ -->
+            <div class="anim-up d5 w-full rounded-2xl border border-gold-500/20 p-5 mb-8"
+                style="background: rgba(6, 78, 59, 0.5); backdrop-filter: blur(8px);">
+
+                <!-- Күні -->
+                <div class="flex items-center py-3.5">
+                    <div class="w-11 h-11 rounded-xl border border-gold-500/30 flex items-center justify-center mr-4 flex-shrink-0"
+                        style="background: rgba(212, 168, 67, 0.1);">
+                        <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[11px] text-gold-500/60 uppercase tracking-[0.15em] font-semibold mb-0.5">Күні
+                        </p>
+                        <p class="text-white font-semibold text-[15px]">17 шілде</p>
+                    </div>
+                </div>
+
+                <div class="h-[1px] mx-2"
+                    style="background: linear-gradient(90deg, transparent, rgba(212,168,67,0.15), transparent);"></div>
+
+                <!-- Өтетін орны -->
+                <div class="flex items-center py-3.5">
+                    <div class="w-11 h-11 rounded-xl border border-gold-500/30 flex items-center justify-center mr-4 flex-shrink-0"
+                        style="background: rgba(212, 168, 67, 0.1);">
+                        <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[11px] text-gold-500/60 uppercase tracking-[0.15em] font-semibold mb-0.5">Өтетін
+                            орны</p>
+                        <p class="text-white font-semibold text-[15px]">Мешіт</p>
+                    </div>
+                </div>
+
+                <div class="h-[1px] mx-2"
+                    style="background: linear-gradient(90deg, transparent, rgba(212,168,67,0.15), transparent);"></div>
+
+                <!-- Мекенжайы -->
+                <div class="flex items-center py-3.5">
+                    <div class="w-11 h-11 rounded-xl border border-gold-500/30 flex items-center justify-center mr-4 flex-shrink-0"
+                        style="background: rgba(212, 168, 67, 0.1);">
+                        <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="1.5"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[11px] text-gold-500/60 uppercase tracking-[0.15em] font-semibold mb-0.5">
+                            Мекенжайы</p>
+                        <p class="text-white font-semibold text-[15px]">Қараой ауылы</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ═══ 6. Кнопка — 2GIS ═══ -->
+            <div class="anim-up d6 w-full mb-6">
+                <!-- ВНИМАНИЕ: Вставьте реальную ссылку на маршрут в 2GIS в атрибут href ниже -->
+                <a href="https://2gis.ru/geo/70030076472045549/71.480952,50.253299" target="_blank"
+                    rel="noopener noreferrer"
+                    class="group w-full flex items-center justify-center py-4 px-6 rounded-2xl transition-all duration-300 border border-gold-500/30 hover:border-gold-500/50"
+                    style="background: rgba(212, 168, 67, 0.1);"
+                    onmouseover="this.style.background='rgba(212, 168, 67, 0.18)'"
+                    onmouseout="this.style.background='rgba(212, 168, 67, 0.1)'">
+                    <svg class="w-5 h-5 mr-3 text-gold-400 transition-transform duration-300 group-hover:scale-110"
+                        fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                    <span class="font-medium text-[15px] text-gold-300">2GIS арқылы бағытты ашу</span>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ═══ Силуэт мечети + нижний орнамент ═══ -->
+        <div class="w-full mt-auto relative">
+            <!-- Силуэт мечети -->
+            <div class="anim-fade d7 w-full">
+                <svg viewBox="0 0 600 120" fill="none" class="w-full" preserveAspectRatio="xMidYMax meet">
+                    <defs>
+                        <linearGradient id="mosque-grad" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#064e3b" stop-opacity="0.6" />
+                            <stop offset="100%" stop-color="#021f18" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Земля -->
+                    <rect x="0" y="100" width="600" height="20" fill="#021f18" />
+                    <!-- Мечеть — центральный купол -->
+                    <path d="M240,100 L240,65 Q240,35 300,25 Q360,35 360,65 L360,100 Z" fill="url(#mosque-grad)" />
+                    <!-- Минарет слева -->
+                    <rect x="215" y="40" width="12" height="60" fill="url(#mosque-grad)" />
+                    <path d="M215,40 L221,28 L227,40 Z" fill="url(#mosque-grad)" />
+                    <circle cx="221" cy="26" r="3" fill="#d4a843" opacity="0.4" />
+                    <!-- Минарет справа -->
+                    <rect x="373" y="40" width="12" height="60" fill="url(#mosque-grad)" />
+                    <path d="M373,40 L379,28 L385,40 Z" fill="url(#mosque-grad)" />
+                    <circle cx="379" cy="26" r="3" fill="#d4a843" opacity="0.4" />
+                    <!-- Полумесяц на куполе -->
+                    <circle cx="300" cy="22" r="4" fill="#d4a843" opacity="0.5" />
+                    <circle cx="302" cy="21" r="3" fill="#064e3b" />
+                    <!-- Боковые здания — слева -->
+                    <rect x="160" y="70" width="55" height="30" fill="url(#mosque-grad)" />
+                    <path d="M160,70 Q187,55 215,70 Z" fill="url(#mosque-grad)" />
+                    <!-- Боковые здания — справа -->
+                    <rect x="385" y="70" width="55" height="30" fill="url(#mosque-grad)" />
+                    <path d="M385,70 Q412,55 440,70 Z" fill="url(#mosque-grad)" />
+                    <!-- Далекие минареты -->
+                    <rect x="130" y="75" width="8" height="25" fill="url(#mosque-grad)" />
+                    <path d="M130,75 L134,65 L138,75 Z" fill="url(#mosque-grad)" />
+                    <rect x="462" y="75" width="8" height="25" fill="url(#mosque-grad)" />
+                    <path d="M462,75 L466,65 L470,75 Z" fill="url(#mosque-grad)" />
+                    <!-- Деревья -->
+                    <ellipse cx="90" cy="90" rx="25" ry="15" fill="url(#mosque-grad)" />
+                    <ellipse cx="510" cy="90" rx="25" ry="15" fill="url(#mosque-grad)" />
+                    <ellipse cx="60" cy="95" rx="20" ry="10" fill="url(#mosque-grad)" />
+                    <ellipse cx="540" cy="95" rx="20" ry="10" fill="url(#mosque-grad)" />
+                    <!-- Звёзды -->
+                    <circle cx="50" cy="15" r="1" fill="#d4a843" opacity="0.3" />
+                    <circle cx="150" cy="25" r="1.2" fill="#d4a843" opacity="0.25" />
+                    <circle cx="450" cy="10" r="1" fill="#d4a843" opacity="0.3" />
+                    <circle cx="530" cy="30" r="0.8" fill="#d4a843" opacity="0.2" />
+                    <circle cx="100" cy="8" r="0.8" fill="#d4a843" opacity="0.2" />
+                    <circle cx="500" cy="18" r="1.2" fill="#d4a843" opacity="0.25" />
+                </svg>
+            </div>
+            <!-- Нижний золотой бордюр -->
+            <div class="w-full h-[1px]"
+                style="background: linear-gradient(90deg, transparent, rgba(212,168,67,0.3), transparent);"></div>
+            <div class="w-full flex justify-center py-2">
+                <svg width="320" height="20" viewBox="0 0 320 20" fill="none" class="shimmer">
+                    <g stroke="#d4a843" stroke-width="0.8" fill="none" opacity="0.5">
+                        <path d="M0,10 L10,0 L20,10 L10,20 Z" />
+                        <path d="M20,10 L30,0 L40,10 L30,20 Z" />
+                        <path d="M40,10 L50,0 L60,10 L50,20 Z" />
+                        <path d="M60,10 L70,0 L80,10 L70,20 Z" />
+                        <path d="M80,10 L90,0 L100,10 L90,20 Z" />
+                        <path d="M100,10 L110,0 L120,10 L110,20 Z" />
+                        <path d="M120,10 L130,0 L140,10 L130,20 Z" />
+                        <path d="M140,10 L150,0 L160,10 L150,20 Z" />
+                        <path d="M160,10 L170,0 L180,10 L170,20 Z" />
+                        <path d="M180,10 L190,0 L200,10 L190,20 Z" />
+                        <path d="M200,10 L210,0 L220,10 L210,20 Z" />
+                        <path d="M220,10 L230,0 L240,10 L230,20 Z" />
+                        <path d="M240,10 L250,0 L260,10 L250,20 Z" />
+                        <path d="M260,10 L270,0 L280,10 L270,20 Z" />
+                        <path d="M280,10 L290,0 L300,10 L290,20 Z" />
+                        <path d="M300,10 L310,0 L320,10 L310,20 Z" />
+                    </g>
+                </svg>
+            </div>
+            <div class="w-full h-[2px] shimmer"
+                style="background: linear-gradient(90deg, transparent, #d4a843, transparent);"></div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
